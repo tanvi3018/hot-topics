@@ -1,0 +1,310 @@
+/*
+Assignment: Loaded Content by Ajax Assignment
+Author: Tanvi Gera
+*/
+
+
+/*
+Google Fonts Used:
+Merriweather/serif;
+Open Sans/sans-serif
+*/
+
+
+/*------importing fonts from google------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans&display=swap');
+
+
+* {
+	box-sizing: border-box;
+}
+
+/*------body styles------*/
+
+    body {
+        font-family: 'Open Sans', 'Arial', sans-serif;
+        color: #6679b3;
+        margin: auto;
+    }
+
+/*------heading styles------*/
+
+    h1,h2,h3 {
+        font-family: 'Merriweather','Times New Roman', serif;
+        color: #242283;
+        text-align: center !important;
+    }
+
+/*------paragraph styles------*/
+
+    p {
+        color: #4336d3;
+    }
+
+/*------img styles------*/
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+/*------header styles------*/
+
+    header {
+        background-color: #141542;
+    }
+
+/*------navigation styles------*/
+
+    .navigation {
+        background-color: #1b2e7c;
+        text-align: center;
+    }
+
+    .navigation ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .navigation a {
+        text-decoration: none;
+        padding: 1rem 2rem;
+        color: #FFFFFF;
+    }
+
+    .navigation a:hover {
+        text-decoration: underline;
+    }
+
+    .logo {
+        color: #FFFFFF;
+        padding: 0 3rem;
+    }
+
+/*------figcaption styles------*/
+
+    figcaption {
+        color: 4C487D;
+    }
+    
+/*------masthead styles------*/
+
+    .masthead {
+        background-color: antiquewhite;
+        background-image: url(../img/globe.jpg);
+        background-repeat:no-repeat;
+        background-size:cover;
+        margin: auto;
+        text-align: left !important;
+    }
+
+    .masthead h1 {
+        margin: 0 10rem;
+        padding: 4rem 0 13rem;
+        color: #4C487D;
+        letter-spacing: 0.5rem;
+    }
+
+/*------main-content styles------*/
+
+    .main-content {
+        text-align: center;
+        margin: auto;
+        max-width: 70rem;
+        padding: 1rem 1.8rem;
+    }
+
+    .main-content p{
+        text-align: left;
+    }
+
+/*---home page styles---*/ 
+    
+    .heading {
+        text-align: left;
+    }
+
+    .info {
+        padding: 1.8rem 0;    
+        border-bottom: solid 1px #a1b1e6;
+    }
+
+/*---portfolio styles---*/
+
+    .image-layout {
+        border-bottom: solid 1px #a1aee6;
+    }
+
+    .image-layout figure{
+        padding-bottom: 2rem;
+    }
+
+/*------footer styles------*/ 
+    
+    footer {
+        width: 100%;
+        text-align: center;
+        background-color: #4C487D;
+        padding: 1.5rem 0;
+    }
+
+    footer a {
+        margin: 1rem;
+        font-size: 0.75rem;
+        color: #92c2ea;
+    }
+
+    footer h3, footer p {
+        color: #FFFFFF;
+    }
+
+    footer p {
+        margin: 0 0 1rem;
+    }
+
+    footer .fab {
+        color: #FFFFFF;
+    }
+
+
+/*media query for mobile*/
+@media only screen and (max-width: 35rem) {
+    
+/*------html styles------*/
+    
+    html {
+        font-size: 0.75rem; 
+        line-height: 1.5rem;
+    }
+
+/*------navigation styles------*/    
+    
+    .navigation {
+        padding-top: 2rem;
+    }
+    
+    .navigation li {
+        padding: 1rem;
+        border-top: solid 1px #a1b1e6;
+        width: 60%;
+        margin: auto;
+    }
+    
+/*------masthead styles------*/
+    
+    .masthead h1 {
+        margin: auto;
+        text-align: left;
+    }
+}
+
+/*media query for tablet*/
+@media only screen and (max-width: 80rem) and (min-width: 35rem) {
+    
+/*------html styles------*/
+    
+    html {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    
+/*------navigation styles------*/
+    
+    .navigation {
+        display: flex;
+        align-items: center;
+    }
+    
+    .navigation ul {
+        display: inline-flex;
+    }
+    
+/*------masthead styles------*/
+    
+    .masthead h1 {
+        margin: auto;
+        padding: 6rem 1rem;
+    }
+    
+/*---home page styles---*/ 
+
+    .info-section {
+        width: 40%;
+        float: left;
+        margin: 0;
+        padding-right: 2rem;
+    }
+
+/*---portfolio page styles---*/ 
+    
+    .image-layout {
+        display: inline-flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+        margin: 0;
+        justify-content: space-evenly;
+    }
+    
+    .image-layout figure {
+        margin: 0; 
+        width: 45%;
+    }
+}
+    
+/*media query for desktop*/
+@media only screen and (min-width: 80rem) {
+
+/*------html styles------*/    
+    
+    html {
+        font-size: 1.25rem; 
+        line-height: 1.6rem;
+    }
+    
+/*------navigation styles------*/
+    
+    .navigation {
+        display: flex;
+        align-items: center;
+    }
+    
+    .navigation ul {
+        display: inline-flex;
+    }
+
+    .logo {
+        padding-left: 6rem;
+    }
+    
+/*---home page styles---*/ 
+    
+    .info {
+        display: flex;
+        margin: auto;
+    }
+    
+    .info p {
+        width: 60%;
+    }
+    
+    .info-section {
+        width: 40%;
+        margin: 0;
+        padding-right: 2rem;
+    }
+    
+ /*---portfolio page styles---*/ 
+    
+    .image-layout {
+        display: inline-flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+        margin: auto;
+    }
+    
+    .image-layout img {
+        width: 300px;
+        height: auto;
+    }
+}
